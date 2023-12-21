@@ -1,4 +1,5 @@
 /** @format */
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 	return (
@@ -11,9 +12,11 @@ export default function Navbar() {
 					<div>Add Courses</div>
 				</div>
 				<div className="flex flex-row font-medium gap-2 py-3 px-6 justify-end items-center ">
-					<button>SignUp</button>
+					<button>
+						<Link to={'/signup'}>SignUp </Link>
+					</button>
 					<button className="bg-lime-400 rounded-full p-3 text-center">
-						Sign In
+						<Link to={'/signin'}>Sign In</Link>
 					</button>
 				</div>
 			</nav>
